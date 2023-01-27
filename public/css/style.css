@@ -1,7 +1,26 @@
-ul{
-    margin:0;
+
+
+/* ヘッダーのスタイル */
+.list-inline{
+    font-size: 20px;
+    margin:0 7px;
 }
 
-.list-inline{
-    
+
+/* スライドの画像と文字を中央配置 */
+.slide_wrapper{
+    background-image: url(../image/common/top_2.png);
+    height: 600px;
+    position: relative;
+    /* div要素に合わせサイズ変化させるレスポンス */
+    background-size: cover;
+    /* 画像を上揃え */
+    background-position: top;
+}
+
+.slide_text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
