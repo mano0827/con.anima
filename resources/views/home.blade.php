@@ -5,25 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSSの読み込み -->
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+
+
     <title>con anime official</title>
 </head>
 
 <body>
     <div class="site_container">
         <div class="header">
-            <div class="header_img">
-                <a href="http://localhost:8888/" class="header_img_link">
-                    <img src="../../image/common/slide_1.png" alt="">
-                </a>
-            </div>
             <div class="header_list">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <img class="header_img w-11" src="{{ asset('image/logo/logo_black.png')}}" alt="con animaロゴ">
+                <ul class="list-inline float-end">
+                    <li class="list-inline-item">Top</li>
+                    <li class="list-inline-item">About</li>
+                    <li class="list-inline-item">Service</li>
+                    <li class="list-inline-item">Contact</li>
                 </ul>
             </div>
+        </div>
+        <div class="slide">
+            <img src="{{ asset('image/common/slide_1.png')}}" class="img-fluid" alt="スライド1枚目">
         </div>
 
         <div class="slide_wrapper">
