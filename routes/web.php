@@ -19,6 +19,7 @@ use App\Http\Controllers\PagesController;
 // });
 
 
+Route::get('/', [PagesController::class, 'getHome'])->name('home');
 Route::get('/home', [PagesController::class, 'getHome'])->name('home');
 Route::get('/service', [PagesController::class, 'getService'])->name('service');
 Route::get('/contact', [PagesController::class, 'getContact'])->name('contact');
