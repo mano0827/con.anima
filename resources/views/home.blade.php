@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
+    <!-- fontawesomeの読み込み -->
+    <script src="https://kit.fontawesome.com/ea36bd0c33.js" crossorigin="anonymous"></script>
+
+
 
     <title>con anime official</title>
 </head>
@@ -29,33 +33,35 @@
             </div>
         </div>
 
-        <div class="slide_wrapper">
-            <div class="slide_text">
-                    <h1>con anima</h1>
-                    <h3>～日常を紡ぎ、未来を想う～</h3>
-            </div>
-        </div>
+        <div class="main">
 
-
-
-        <div class="about_wrapper">
-            <div class="about_title">
-                <h2>完全オーダーメイド<br>
-                    音楽映像制作サービス</h2>
+            <div class="slide_wrapper">
+                <div class="slide_text text-white text-center">
+                    <h1 class="slide_title">con anima</h1>
+                    <h3 class="slide_subtitle">～日常を紡ぎ、未来を想う～</h3>
+                </div>
             </div>
 
-            <div class="about_text">
-                <p>「オリジナル楽曲」×「オリジナル映像」で、結婚や記念日などのお祝い事、または大切な人への贈り物として<br>
-                    完全オーダーメイドのミュージックビデオを作成いたします。<br>
-                    付き合うまでのストーリーや普段の何気ない日常生活、いつもは伝えられない感謝な<br>
-                    お客さま自身の伝えたい想いを<br>
-                    オリジナル楽曲とオリジナル映像で届けてみませんか。
-                </p>
+
+
+            <div class="about_wrapper text-center mt-7">
+                <div class="mb-4">
+                    <h2 class="about_title">完全オーダーメイド<br>
+                        音楽映像制作サービス</h2>
+                </div>
+
+                <div class="about_text">
+                    <p>「オリジナル楽曲」×「オリジナル映像」で、結婚や記念日などのお祝い事、または大切な人への贈り物として<br>
+                        完全オーダーメイドのミュージックビデオを作成いたします。<br>
+                        付き合うまでのストーリーや普段の何気ない日常生活、いつもは伝えられない感謝な<br>
+                        お客さま自身の伝えたい想いを<br>
+                        オリジナル楽曲とオリジナル映像で届けてみませんか。
+                    </p>
+                </div>
             </div>
-        </div>
 
 
-        <!-- <div class="movie_wrapper">
+            <!-- <div class="movie_wrapper">
                 <div class="movie-main">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/i24t9GPkYWo?loop=1&playlist=i24t9GPkYWo&showinfo=0&theme=light&color=white" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
@@ -67,20 +73,22 @@
 
 
 
-        <div class="service_wrapper">
-            <div class="service_title">
-                <p>サービス内容</p>
-            </div>
+            <div class="service_wrapper">
+                <div class="text-center">
+                    <h2 class="service_title">Service</h2>
+                </div>
 
-            <ul>
-                <li>
-                    <section class="service_section">
+
+
+                <div class="service_area d-flex justify-content-center">
+
+                    <div class="service_section">
                         <div class="service_section_img">
                             <img src="" alt="">
                         </div>
-                        <div class="service_section_content">
+                        <div class="service_section_content text-center">
                             <div class="service_section_content_title">
-                                <h3>初回打ち合わせ体験プラン</h3>
+                                <h3>初回体験プラン</h3>
                             </div>
                             <div class="service_section_content_price">
                                 <p>¥5,000</p>
@@ -89,15 +97,15 @@
                                 <a href="http://localhost:8888/service">詳細はこちらから</a>
                             </div>
                         </div>
-                    </section>
-                </li>
+                    </div>
 
-                <li>
-                    <section class="service_section">
+
+
+                    <div class="service_section">
                         <div class="service_section_img">
                             <img src="" alt="">
                         </div>
-                        <div class="service_section_content">
+                        <div class="service_section_content text-center">
                             <div class="service_section_content_title">
                                 <h3>セミオーダープラン</h3>
                             </div>
@@ -108,16 +116,15 @@
                                 <a href="http://localhost:8888/service">詳細はこちらから</a>
                             </div>
                         </div>
-                    </section>
-                </li>
+                    </div>
 
 
-                <li>
-                    <section class="service_section">
+
+                    <div class="service_section">
                         <div class="service_section_img">
                             <img src="" alt="">
                         </div>
-                        <div class="service_section_content">
+                        <div class="service_section_content text-center">
                             <div class="service_section_content_title">
                                 <h3>フルオーダープラン</h3>
                             </div>
@@ -128,38 +135,56 @@
                                 <a href="http://localhost:8888/service">詳細はこちらから</a>
                             </div>
                         </div>
-                    </section>
-                </li>
+                    </div>
 
-            </ul>
-
-
-            <div class="contact_wrapper">
-                <div class="contact_title">
-                    <h2>お問合せ</h2>
                 </div>
 
-                <div class="contact_content">
-                    <div class="contact_content_name">
-                        <p class="contact_content_name_title">名前</p>
-                        <input type="text" name="" id="">
-                    </div>
 
-                    <div class="contact_content_email">
-                        <p class="contact_content_email_title">メールアドレス</p>
-                        <input type="text" name="" id="">
-                    </div>
 
-                    <div class="contact_content_subject">
-                        <p class="contact_content_subject_title">件名</p>
-                        <input type="text" name="" id="">
-                    </div>
 
-                    <div class="contact_content_message">
-                        <p class="contact_content_message_title">メッセージ</p>
-                        <input type="text" name="" id="">
+                <div class="contact_wrapper text-center">
+                    <h2 class="contact_title">Contact</h2>
+
+                    <div class="contact_content w-50">
+                        <div class="contact_content_name text-start">
+                            <p class="contact_content_title">名前</p>
+                            <input class="w-100" type="text" name="" id="">
+                        </div>
+
+                        <div class="contact_content_email text-start">
+                            <p class="contact_content_title">メールアドレス</p>
+                            <input class="w-100" type="text" name="" id="">
+                        </div>
+
+                        <div class="contact_content_subject text-start">
+                            <p class="contact_content_title">件名</p>
+                            <input class="w-100" type="text" name="" id="">
+                        </div>
+
+                        <div class="contact_content_message text-start">
+                            <p class="contact_content_title">メッセージ</p>
+                            <input class="w-100" type="textarea" name="" id="">
+                        </div>
                     </div>
                 </div>
+            </div>
+
+        </div>
+
+
+        <div class="footer text-center">
+            <div class="sns_link mb-2" id="sns_logo">
+                <a href="https://www.instagram.com/con.anima_official/">
+                    <i class="fa-brands fa-instagram mx-3"></i>
+                </a>
+                <a href="https://www.youtube.com/watch?v=i24t9GPkYWo&list=RDi24t9GPkYWo&start_radio=1">
+                    <i class="fa-brands fa-youtube mx-3"></i> </a>
+            </div>
+
+            <div class="logo_img">
+                <a href="">
+                    <img class="header_img w-11" src="{{ asset('image/logo/logo_black.png')}}" alt="con animaロゴ">
+                </a>
             </div>
         </div>
 
