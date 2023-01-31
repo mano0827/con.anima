@@ -1,3 +1,5 @@
+/* ＝＝＝共通タグ＝＝＝ */
+
 a {
     text-decoration: none;
     color: black;
@@ -5,16 +7,17 @@ a {
 
 
 
-.site_container {
-    font-family: "ヒラギノ明朝 ProN W4", "HiraMinProN-W4", "HG明朝E", "MS Ｐ明朝", "MS PMincho", "MS 明朝", serif;
-    background-color: #FBFAF7;
-}
 
 
 
 
 
-/* ■■■ ヘッダーのスタイル ■■■*/
+
+
+/* ***共通部品*** */
+
+
+/* ■■■ Header ■■■*/
 .list-inline {
     font-size: 20px;
     margin: 0 7px;
@@ -22,7 +25,37 @@ a {
 
 
 
-/* ■■■ スライドのスタイル ■■■ */
+/* ■■■ Site all ■■■*/
+.site_container {
+    font-family: "ヒラギノ明朝 ProN W4", "HiraMinProN-W4", "HG明朝E", "MS Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+    background-color: #FBFAF7;
+}
+
+
+
+/* ■■■ Footer ■■■ */
+
+.footer {
+    margin: 100px 0 40px 0;
+}
+
+.fa-brands {
+    font-size: x-large;
+    color: black;
+}
+
+
+
+
+
+
+/* ■■■■■■■■■■■■■■■■■■■■ */
+/* ■■■■■ TOPページ ■■■■■ */
+/* ■■■■■■■■■■■■■■■■■■■■ */
+
+
+
+/* ■■■ Slider ■■■ */
 
 /* スライドの画像と文字を中央配置 */
 .slide_wrapper {
@@ -49,7 +82,7 @@ a {
 
 
 
-/* ■■■ about ■■■ */
+/* ■■■ About ■■■ */
 
 .about_title {
     font-size: 35px;
@@ -67,6 +100,15 @@ a {
 
 .service_section{
     width:300px;
+    position: relative;
+}
+
+.service_section a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
 }
 
 .service_wrapper {
@@ -81,7 +123,7 @@ a {
     padding: 8%;
 }
 
-.service_section_content:hover {
+.service_section:hover {
     background-color: #ece9e3;
 }
 
@@ -111,13 +153,22 @@ a {
 
 
 
-/* ■■■ Footer ■■■ */
 
-.footer {
-    margin: 100px 0 40px 0;
+
+
+
+/* ■■■■■■■■■■■■■■■■■■■■ */
+/* ■■■ Serviceページ ■■■ */
+/* ■■■■■■■■■■■■■■■■■■■■ */
+
+.service_about_img{
+    width: 40%;
+    padding-right:40px;
+    min-width: 270px;
 }
 
-.fa-brands {
-    font-size: x-large;
-    color: black;
+
+.service_about_img img{
+    width: 100%;
+    padding: 10px;
 }

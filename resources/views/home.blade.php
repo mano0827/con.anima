@@ -83,6 +83,7 @@
                 <div class="service_area d-flex justify-content-center">
 
                     <div class="service_section">
+                        <a href="http://localhost:8888/service"></a>
                         <div class="service_section_img">
                             <img src="" alt="">
                         </div>
@@ -93,8 +94,8 @@
                             <div class="service_section_content_price">
                                 <p>¥5,000</p>
                             </div>
-                            <div class="service_section_content_link">
-                                <a href="http://localhost:8888/service">詳細はこちらから</a>
+                            <div class="service_section_content_detail">
+                                <p>詳細はこちらから</a>
                             </div>
                         </div>
                     </div>
@@ -102,6 +103,7 @@
 
 
                     <div class="service_section">
+                        <a href="http://localhost:8888/service"></a>
                         <div class="service_section_img">
                             <img src="" alt="">
                         </div>
@@ -112,15 +114,15 @@
                             <div class="service_section_content_price">
                                 <p>¥98,000~</p>
                             </div>
-                            <div class="service_section_content_link">
-                                <a href="http://localhost:8888/service">詳細はこちらから</a>
+                            <div class="service_section_content_detail">
+                                <p>詳細はこちらから</a>
                             </div>
                         </div>
                     </div>
 
 
-
                     <div class="service_section">
+                        <a href="http://localhost:8888/service"></a>
                         <div class="service_section_img">
                             <img src="" alt="">
                         </div>
@@ -131,11 +133,12 @@
                             <div class="service_section_content_price">
                                 <p>¥198,000~</p>
                             </div>
-                            <div class="service_section_content_link">
-                                <a href="http://localhost:8888/service">詳細はこちらから</a>
+                            <div class="service_section_content_detail">
+                                <p>詳細はこちらから
                             </div>
                         </div>
                     </div>
+                    </a>
 
                 </div>
 
