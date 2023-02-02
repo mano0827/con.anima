@@ -44,7 +44,7 @@
 
 
 
-            <div class="about_wrapper text-center mt-7">
+            <div class="about_wrapper text-center mt-7 pb-5">
                 <div class="mb-4">
                     <h2 class="about_title">完全オーダーメイド<br>
                         音楽映像制作サービス</h2>
@@ -73,7 +73,112 @@
 
 
 
-            <div class="service_wrapper">
+
+
+
+
+            <div class="site_container service ">
+                <div class="service_outer mt-5 pt-5">
+                    <div class="service_about_title_img_r">
+                        <img src="{{ asset('image/text/first_trial_plan.png')}}" alt="First Trial, Plan">
+                    </div>
+
+
+                    <div class="service_about d-flex flex-row justify-content-end align-items-center mt-3">
+                        <div class="service_about_title-r px-2 mx-2 ms-2">
+                            <h1 class="service_outer_title">
+                                初回体験プラン
+                            </h1>
+                            <p class="service_about_text">
+                                初回打ち合わせまでの流れを実際に体験していただくプランです。<br>
+                                ※楽曲、映像の制作は行いません。
+                            </p>
+                            <div class="service_link text-start">
+                                <a class="link" href="http://localhost:8888/service">Read more</a>
+                            </div>
+                        </div>
+
+                        <div class="service_about_img">
+                            <img src="{{ asset('image/common/service_img1.png')}}" alt="初回体験プランの画像">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="service_outer my-5 pt-4">
+                    <div class="service_about_title_img_l pt-5">
+                        <img src="{{ asset('image/text/semi_order_plan.png')}}" alt="Semi Order, Plan">
+                    </div>
+
+
+                    <div class="service_about d-flex flex-row justify-content-start align-items-center mt-3">
+
+                        <div class="service_about_img">
+                            <img src="{{ asset('image/common/service_img2.png')}}" alt="初回体験プランの画像">
+                        </div>
+
+                        <div class="service_about_title-l px-2 mx-2 ms-2">
+                            <h1 class="service_outer_title">
+                                セミオーダープラン
+                            </h1>
+                            <p class="service_about_text">
+                                完全オリジナル楽曲＆お客さま自身で撮影いただいた写真や動画を編集しミュージックビデオを制作するプランです。
+                            </p>
+                            <div class="service_link text-start">
+                                <a class="link" href="http://localhost:8888/service">Read more</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="service_outer mt-5 pt-5">
+                    <div class="service_about_title_img_r">
+                        <img src="{{ asset('image/text/full_order_plan.png')}}" alt="First Trial, Plan">
+                    </div>
+
+
+                    <div class="service_about d-flex flex-row justify-content-end align-items-center mt-3">
+                        <div class="service_about_title-r px-2 mx-2 ms-2">
+                            <h1 class="service_outer_title">
+                                フルオーダープラン
+                            </h1>
+                            <p class="service_about_text">
+                                完全オリジナル楽曲&構成含め0から作り上げるMVを制作
+                            </p>
+                            <div class="service_link text-start">
+                                <a class="link" href="http://localhost:8888/service">Read more</a>
+                            </div>
+                        </div>
+
+                        <div class="service_about_img">
+                            <img src="{{ asset('image/common/service_img3.png')}}" alt="初回体験プランの画像">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- <div class="service_wrapper">
                 <div class="text-center">
                     <h2 class="service_title">Service</h2>
                 </div>
@@ -141,55 +246,60 @@
                     </a>
 
                 </div>
+ -->
 
 
 
+            <div class="contact_wrapper text-center">
+                <h2 class="contact_title">Contact</h2>
 
-                <div class="contact_wrapper text-center">
-                    <h2 class="contact_title">Contact</h2>
-
-                    <div class="contact_content w-50">
-                        <div class="contact_content_name text-start">
-                            <p class="contact_content_title">名前</p>
-                            <input class="w-100" type="text" name="" id="">
-                        </div>
-
-                        <div class="contact_content_email text-start">
-                            <p class="contact_content_title">メールアドレス</p>
-                            <input class="w-100" type="text" name="" id="">
-                        </div>
-
-                        <div class="contact_content_subject text-start">
-                            <p class="contact_content_title">件名</p>
-                            <input class="w-100" type="text" name="" id="">
-                        </div>
-
-                        <div class="contact_content_message text-start">
-                            <p class="contact_content_title">メッセージ</p>
-                            <input class="w-100" type="textarea" name="" id="">
-                        </div>
+                <div class="contact_content w-50">
+                    <div class="contact_content_name text-start">
+                        <p class="contact_content_title">名前</p>
+                        <input class="w-100" type="text" name="" id="">
                     </div>
+
+                    <div class="contact_content_email text-start">
+                        <p class="contact_content_title">メールアドレス</p>
+                        <input class="w-100" type="text" name="" id="">
+                    </div>
+
+                    <div class="contact_content_subject text-start">
+                        <p class="contact_content_title">件名</p>
+                        <input class="w-100" type="text" name="" id="">
+                    </div>
+
+                    <div class="contact_content_message text-start">
+                        <p class="contact_content_title">メッセージ</p>
+                        <textarea class="w-100" type="textarea" name="" id="" rows="4"></textarea>
+                    </div>
+
+                    <div class="contact_content_message_btn">
+                    <button type="submit">送信</button>
+                    </div>
+
                 </div>
             </div>
-
         </div>
 
+    </div>
 
-        <div class="footer text-center">
-            <div class="sns_link mb-2" id="sns_logo">
-                <a href="https://www.instagram.com/con.anima_official/">
-                    <i class="fa-brands fa-instagram mx-3"></i>
-                </a>
-                <a href="https://www.youtube.com/watch?v=i24t9GPkYWo&list=RDi24t9GPkYWo&start_radio=1">
-                    <i class="fa-brands fa-youtube mx-3"></i> </a>
-            </div>
 
-            <div class="logo_img">
-                <a href="">
-                    <img class="header_img w-11" src="{{ asset('image/logo/logo_black.png')}}" alt="con animaロゴ">
-                </a>
-            </div>
+    <div class="footer text-center">
+        <div class="sns_link mb-2" id="sns_logo">
+            <a href="https://www.instagram.com/con.anima_official/">
+                <i class="fa-brands fa-instagram mx-3"></i>
+            </a>
+            <a href="https://www.youtube.com/watch?v=i24t9GPkYWo&list=RDi24t9GPkYWo&start_radio=1">
+                <i class="fa-brands fa-youtube mx-3"></i> </a>
         </div>
+
+        <div class="logo_img">
+            <a href="">
+                <img class="header_img w-11" src="{{ asset('image/logo/logo_black.png')}}" alt="con animaロゴ">
+            </a>
+        </div>
+    </div>
 
     </div>
 

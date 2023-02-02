@@ -35,15 +35,15 @@
 
         <div class="main">
 
-            <div class="site_container service">
-                <div class="service_outer">
-                <div class="service_about_title_img">
-                            <img class="w-50" src="{{ asset('image/text/first_trial_plan.png')}}" alt="初回体験プランの画像">
-                        </div>
+            <div class="site_container service ">
+                <div class="service_outer mt-5 pt-3">
+                    <div class="service_about_title_img_r">
+                        <img src="{{ asset('image/text/first_trial_plan.png')}}" alt="First Trial, Plan">
+                    </div>
 
 
-                    <div class="service_about d-flex flex-row justify-content-between">
-                        <div class="service_about_title">
+                    <div class="service_about d-flex flex-row justify-content-end align-items-center mt-3">
+                        <div class="service_about_title px-2 mx-2 ms-2">
                             <h1 class="service_outer_title">
                                 初回体験プラン
                             </h1>
@@ -59,11 +59,10 @@
 
                     </div>
 
-                    <hr>
 
-                    <div class="service_detail">
-                        <h3 class="service_detail_title">プラン内容</h3>
-                        <p class="service_detail_text">
+                    <div class="service_detail my-4 px-2 mx-2">
+                        <!-- <h3 class="service_detail_title">プラン内容</h3> -->
+                        <p class="service_detail_text text-end">
                             まず、楽曲に関する簡単なアンケートをまずご記入いただきます。<br>
                             そちらのアンケート内容をもとに、楽曲に関する初回お打ち合わせを、<br>
                             オンライン形式にて1時間程行います。<br>
@@ -80,20 +79,33 @@
 
 
             <div class="site_container service">
-                <div class="service_outer">
-                    <div class="service_about">
-                        <h1 class="service_outer_title">
-                            セミオーダープラン
-                        </h1>
-                        <p class="service_outer_text">
-                            完全オリジナル楽曲＆お客さま自身で撮影いただいた写真や動画を編集しミュージックビデオを制作
-                        </p>
+                <div class="service_outer my-5 pt-4">
+                    <div class="service_about_title_img_l pt-5">
+                        <img src="{{ asset('image/text/semi_order_plan.png')}}" alt="Semi Order, Plan">
                     </div>
 
-                    <hr>
 
-                    <div class="service_detail">
-                        <h3 class="service_detail_title">プラン内容</h3>
+                    <div class="service_about d-flex flex-row justify-content-start align-items-center mt-3">
+
+                        <div class="service_about_img">
+                            <img src="{{ asset('image/common/service_img2.png')}}" alt="初回体験プランの画像">
+                        </div>
+
+                        <div class="service_about_title-l px-2 mx-2 ms-2">
+                            <h1 class="service_outer_title">
+                                セミオーダープラン
+                            </h1>
+                            <p class="service_about_text">
+                                完全オリジナル楽曲＆お客さま自身で撮影いただいた写真や動画を編集しミュージックビデオを制作するプランです。
+                            </p>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="service_detail my-4 px-2 mx-2">
+                        <!-- <h3 class="service_detail_title">プラン内容</h3> -->
                         <p class="service_detail_text">
                             まず、楽曲制作にあたり簡単なアンケートをご記入いただきます。<br>
                             そちらのアンケートの内容を元に、オンライン形式にて2〜3回ほどのお打ち合わせをさせていただきます。<br>
@@ -115,40 +127,53 @@
 
 
 
-            <div class="site_container service">
-                <div class="service_outer">
-                    <div class="service_about">
+            <div class="service_outer mt-5 pt-3">
+                <div class="service_about_title_img_r">
+                    <img src="{{ asset('image/text/full_order_plan.png')}}" alt="First Trial, Plan">
+                </div>
+
+
+                <div class="service_about d-flex flex-row justify-content-end align-items-center mt-3">
+                    <div class="service_about_title px-2 mx-2 ms-2">
                         <h1 class="service_outer_title">
                             フルオーダープラン
                         </h1>
-                        <p class="service_outer_text">
-                            完全オリジナル楽曲&構成含め0から作り上げるMVを制作
+                        <p class="service_about_text">
+                            完全オリジナル楽曲&構成含め0から作り上げるMVを制作するプランです。
                         </p>
                     </div>
 
-                    <hr>
-
-                    <div class="service_detail">
-                        <h3 class="service_detail_title">プラン内容</h3>
-                        <p class="service_detail_text">
-                            まず、楽曲制作にあたり簡単なアンケートをご記入いただきます。<br>
-                            そちらのアンケートの内容を元に、オンライン形式にて3~4回ほどのお打ち合わせをさせていただきます。<br>
-                            楽曲に込めたい想いや、曲の雰囲気等をお伝えいただき、完全オーダーメイドの楽曲を制作いたします。<br>
-                            <br>
-                            ミュージックビデオについては、撮影・編集作業含め0から作り上げていきます。<br>
-                            撮影については、お客さまの出演も可能です。<br>
-                            ミュージックビデオのイメージにつきましても、お打ち合わせイメージを少しずつ固めながら、実際の制作に取り掛かります。<br>
-                            プロのカメラマンが撮影、編集作業を行い、完全オリジナルのミュージックビデオを制作させていただきます。<br>
-                            <br>
-                            上記がフルオーダープランの基本的な内容になりますが、その他ご希望・ご要望等ございましたら<br>
-                            お気軽にご相談ください。<br>
-                        </p>
+                    <div class="service_about_img">
+                        <img src="{{ asset('image/common/service_img3.png')}}" alt="初回体験プランの画像">
                     </div>
 
                 </div>
-            </div>
 
+
+                <div class="service_detail my-4 px-2 mx-2">
+                    <!-- <h3 class="service_detail_title">プラン内容</h3> -->
+                    <p class="service_detail_text text-end">
+                        まず、楽曲制作にあたり簡単なアンケートをご記入いただきます。<br>
+                        そちらのアンケートの内容を元に、オンライン形式にて3~4回ほどのお打ち合わせをさせていただきます。<br>
+                        楽曲に込めたい想いや、曲の雰囲気等をお伝えいただき、完全オーダーメイドの楽曲を制作いたします。<br>
+                        <br>
+                        ミュージックビデオについては、撮影・編集作業含め0から作り上げていきます。<br>
+                        撮影については、お客さまの出演も可能です。<br>
+                        ミュージックビデオのイメージにつきましても、お打ち合わせイメージを少しずつ固めながら、実際の制作に取り掛かります。<br>
+                        プロのカメラマンが撮影、編集作業を行い、完全オリジナルのミュージックビデオを制作させていただきます。<br>
+                        <br>
+                        上記がフルオーダープランの基本的な内容になりますが、その他ご希望・ご要望等ございましたら<br>
+                        お気軽にご相談ください。<br>
+                    </p>
+                </div>
+
+            </div>
         </div>
+
+
+
+
+    </div>
 
 </body>
 
