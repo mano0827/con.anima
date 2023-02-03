@@ -19,23 +19,23 @@
 </head>
 
 <body>
-    <div class="site_container">
+    <div class="site_container" id="site_container">
 
-        <div class="header">
+        <div class="header" id="header_id">
             <div class="header_list d-flex flex-row align-items-center justify-content-between">
-                <img class="header_img w-11" src="{{ asset('image/logo/logo_black.png')}}" alt="con animaロゴ">
-                <div class="list-inline d-flex">
-                    <div class="mx-3">Top</div>
-                    <div class="mx-3">About</div>
-                    <div class="mx-3">Service</div>
-                    <div class="mx-3">Contact</div>
+                <img class="header_img" src="{{ asset('image/logo/logo_black.png')}}" alt="con animaロゴ">
+                <div class="site_links list-inline d-flex">
+                        <a class="site_link mx-3" href="#site_container">Top</a>
+                        <a class="site_link mx-3" href="#about_wrapper">About</a>
+                        <a class="site_link mx-3" href="#service_wrapper">Service</a>
+                        <a class="site_link mx-3" href="#contact_wrapper">Contact</a>
                 </div>
             </div>
         </div>
 
         <div class="main">
 
-            <div class="slide_wrapper">
+            <div class="slide_wrapper" id="slide_wrapper">
                 <div class="slide_text text-white text-center">
                     <h1 class="slide_title">con anima</h1>
                     <h3 class="slide_subtitle">～日常を紡ぎ、未来を想う～</h3>
@@ -44,7 +44,7 @@
 
 
 
-            <div class="about_wrapper text-center mt-7 pb-5">
+            <div class="about_wrapper text-center mt-7 pb-5" id="about_wrapper">
                 <div class="mb-4">
                     <h2 class="about_title">完全オーダーメイド<br>
                         音楽映像制作サービス</h2>
@@ -76,9 +76,8 @@
 
 
 
-
-            <div class="site_container service ">
-                <div class="service_outer mt-5 pt-5">
+            <div class="service_wrapper pt-5" id="service_wrapper">
+                <div class="service_outer" mt-5 pt-5">
                     <div class="service_about_title_img_r">
                         <img src="{{ asset('image/text/first_trial_plan.png')}}" alt="First Trial, Plan">
                     </div>
@@ -94,7 +93,7 @@
                                 ※楽曲、映像の制作は行いません。
                             </p>
                             <div class="service_link text-start">
-                                <a class="link" href="http://localhost:8888/service">Read more</a>
+                                <a class="link" href="http://localhost:8888/service_first">Read more</a>
                             </div>
                         </div>
 
@@ -129,7 +128,7 @@
                                 完全オリジナル楽曲＆お客さま自身で撮影いただいた写真や動画を編集しミュージックビデオを制作するプランです。
                             </p>
                             <div class="service_link text-start">
-                                <a class="link" href="http://localhost:8888/service">Read more</a>
+                                <a class="link" href="http://localhost:8888/service_semi">Read more</a>
                             </div>
                         </div>
 
@@ -157,7 +156,7 @@
                                 完全オリジナル楽曲&構成含め0から作り上げるMVを制作
                             </p>
                             <div class="service_link text-start">
-                                <a class="link" href="http://localhost:8888/service">Read more</a>
+                                <a class="link" href="http://localhost:8888/service_full">Read more</a>
                             </div>
                         </div>
 
@@ -170,7 +169,6 @@
                 </div>
 
             </div>
-
 
 
 
@@ -250,7 +248,7 @@
 
 
 
-            <div class="contact_wrapper text-center">
+            <div class="contact_wrapper text-center" id="contact_wrapper">
                 <h2 class="contact_title">Contact</h2>
 
                 <div class="contact_content w-50">
@@ -275,7 +273,7 @@
                     </div>
 
                     <div class="contact_content_message_btn">
-                    <button type="submit">送信</button>
+                        <button type="submit">送信</button>
                     </div>
 
                 </div>

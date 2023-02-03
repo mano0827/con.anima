@@ -12,8 +12,18 @@ class PagesController extends Controller
       }
   
       // Serviceを表示
-      public function getService(){
-        return view('service');
+      public function getFirst(){
+        return view('service_first');
+      }
+
+      // Serviceを表示
+      public function getSemi(){
+        return view('service_semi');
+      }
+
+      // Serviceを表示
+      public function getFull(){
+        return view('service_full');
       }
   
       // Contactを表示

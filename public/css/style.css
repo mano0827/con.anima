@@ -14,10 +14,6 @@ p {
 
 
 
-
-
-
-
 /* ***共通部品*** */
 
 
@@ -27,6 +23,22 @@ p {
     margin: 0 7px;
 }
 
+
+.header_img {
+    width: 100px;
+}
+
+.site_link {
+    font-size: medium;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+
+.site_link:hover{
+    color: #afafaf;
+    text-decoration: underline;
+}
 
 
 /* ■■■ Site all ■■■*/
@@ -49,8 +61,8 @@ p {
     transition: 0.2s;
 }
 
-.fa-brands:hover{
-transform: scale(1.2);
+.fa-brands:hover {
+    transform: scale(1.2);
 }
 
 .sns_link a {
@@ -61,9 +73,9 @@ transform: scale(1.2);
 
 
 
-/* ■■■■■■■■■■■■■■■■■■■■ */
-/* ■■■■■ TOPページ ■■■■■ */
-/* ■■■■■■■■■■■■■■■■■■■■ */
+/* ================================= */
+/* =========== TOPページ ============ */
+/* ================================= */
 
 
 
@@ -109,7 +121,7 @@ transform: scale(1.2);
 
 
 /* ■■■ Service ■■■ */
-
+/* 
 .service_section {
     width: 300px;
     position: relative;
@@ -137,7 +149,7 @@ transform: scale(1.2);
 
 .service_section:hover {
     background-color: #ece9e3;
-}
+} */
 
 
 
@@ -261,7 +273,7 @@ transform: scale(1.2);
 
 }
 
-.service_link:hover {
+.service_link :hover {
     color: #ffffff;
     background-color: #a2a289;
     transform: scale(1.05);
@@ -276,21 +288,147 @@ transform: scale(1.2);
 /* ■■■ Contact ■■■ */
 /* ■■■■■■■■■■■■■■■■■■■■ */
 
-.contact_content_message_btn{
+.contact_content_message_btn {
     margin-top: 10px;
 }
 
-.contact_content_message_btn button{
-    display       : inline-block;
-    border-radius : 11%;          /* 角丸       */
-    font-size     : 12pt;        /* 文字サイズ */
-    cursor        : pointer;     /* カーソル   */
-    padding       : 7px 42px;   /* 余白       */
-    background    : #fbfaf7;     /* 背景色     */
-    line-height   : 1em;         /* 1行の高さ  */
-    opacity       : 0.9;         /* 透明度     */
-    transition    : .1s;         /* なめらか変化 */
-  }
-  .contact_content_message_btn button:hover {
-    background    : #d5d2c7;     /* 背景色     */
-  }
+.contact_content_message_btn button {
+    display: inline-block;
+    border-radius: 11%;
+    /* 角丸       */
+    font-size: 12pt;
+    /* 文字サイズ */
+    cursor: pointer;
+    /* カーソル   */
+    padding: 7px 42px;
+    /* 余白       */
+    background: #fbfaf7;
+    /* 背景色     */
+    line-height: 1em;
+    /* 1行の高さ  */
+    opacity: 0.9;
+    /* 透明度     */
+    transition: .1s;
+    /* なめらか変化 */
+}
+
+.contact_content_message_btn button:hover {
+    background: #d5d2c7;
+    /* 背景色     */
+}
+
+
+
+
+
+
+
+
+/* ==================================== */
+/* =========== サービスページ ============ */
+/* ==================================== */
+
+.service_slide_wrapper_1 {
+    background-image: url(../image/common/service_top1.png);
+    height: 600px;
+    position: relative;
+    /* div要素に合わせサイズ変化させるレスポンス */
+    background-size: cover;
+    /* 画像を上揃え */
+    background-position: top;
+}
+
+
+.service_slide_wrapper_2 {
+    background-image: url(../image/common/service_top2.png);
+    height: 600px;
+    position: relative;
+    /* div要素に合わせサイズ変化させるレスポンス */
+    background-size: cover;
+    /* 画像を上揃え */
+    background-position: top;
+}
+
+
+.service_slide_wrapper_3 {
+    background-image: url(../image/common/service_top3.png);
+    height: 600px;
+    position: relative;
+    /* div要素に合わせサイズ変化させるレスポンス */
+    background-size: cover;
+    /* 画像を上揃え */
+    background-position: top;
+}
+
+
+
+.service_slide_text {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.service_slide_text h1 {
+    font-size: 750%;
+    font-family: 'Vollkorn', serif;
+    letter-spacing: 8px;
+    line-height: 95%;
+}
+
+
+
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ■■■■■■■■■■ 映像 ■■■■■■■■■■ */
+/* ■■■■■■■■■■■■■■■■■■■■■■■■■ */
+
+
+.service_about_text {
+    letter-spacing: 1px;
+}
+
+.movie-main iframe {
+    margin: 0 auto
+}
+
+
+
+
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ■■■■■■■ プラン内容 ■■■■■■■■ */
+/* ■■■■■■■■■■■■■■■■■■■■■■■■■ */
+
+.service_detail {
+    margin: 0 auto;
+}
+
+
+
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ■■■■■■■■■■ 金額 ■■■■■■■■■■■ */
+/* ■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+
+.service_price {
+    margin: 0 auto;
+}
+
+
+
+/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ■■■■■ サービス下部リンク ■■■■■ */
+/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+
+.service_bottom_link {
+    font-size: medium;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+
+.service_bottom_link:hover{
+    color: #afafaf;
+    text-decoration: underline;
+}
