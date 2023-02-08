@@ -27,7 +27,9 @@
 
         <div class="header" id="header_id">
             <div class="header_list d-flex flex-row align-items-center justify-content-between">
-                <img class="header_img" src="{{ asset('image/logo/logo_black.png')}}" alt="con animaロゴ">
+                <a href="http://localhost:8888/home">
+                    <img class="header_img" src="{{ asset('image/logo/logo_black.png')}}" alt="con animaロゴ">
+                </a>
                 <div class="site_links list-inline d-flex">
                     <a class="site_link mx-3" href="http://localhost:8888/#site_container">Top</a>
                     <a class="site_link mx-3" href="http://localhost:8888/#about_wrapper">About</a>

@@ -19,16 +19,18 @@
 </head>
 
 <body>
-    <div class="site_container" id="site_container">
+    <div class="site_container" id="top">
 
         <div class="header" id="header_id">
             <div class="header_list d-flex flex-row align-items-center justify-content-between">
-                <img class="header_img" src="{{ asset('image/logo/logo_black.png')}}" alt="con animaロゴ">
+                <a href="http://localhost:8888/home">
+                    <img class="header_img" src="{{ asset('image/logo/logo_black.png')}}" alt="con animaロゴ">
+                </a>
                 <div class="site_links list-inline d-flex">
-                        <a class="site_link mx-3" href="#site_container">Top</a>
-                        <a class="site_link mx-3" href="#about_wrapper">About</a>
-                        <a class="site_link mx-3" href="#service_wrapper">Service</a>
-                        <a class="site_link mx-3" href="#contact_wrapper">Contact</a>
+                    <a class="site_link mx-3" href="#top">Top</a>
+                    <a class="site_link mx-3" href="#about">About</a>
+                    <a class="site_link mx-3" href="#service">Service</a>
+                    <a class="site_link mx-3" href="#contact">Contact</a>
                 </div>
             </div>
         </div>
@@ -44,7 +46,7 @@
 
 
 
-            <div class="about_wrapper text-center mt-7 pb-5" id="about_wrapper">
+            <div class="about_wrapper text-center mt-7 pb-5" id="about">
                 <div class="mb-4">
                     <h2 class="about_title">完全オーダーメイド<br>
                         音楽映像制作サービス</h2>
@@ -76,7 +78,7 @@
 
 
 
-            <div class="service_wrapper pt-5" id="service_wrapper">
+            <div class="service_wrapper pt-5" id="service">
                 <div class="service_outer" mt-5 pt-5">
                     <div class="service_about_title_img_r">
                         <img src="{{ asset('image/text/first_trial_plan.png')}}" alt="First Trial, Plan">
@@ -248,57 +250,58 @@
 
 
 
-            <div class="contact_wrapper text-center" id="contact_wrapper">
+            <div class="contact_wrapper text-center" id="contact">
                 <h2 class="contact_title">Contact</h2>
 
                 <div class="contact_content w-50">
-                    <div class="contact_content_name text-start">
-                        <p class="contact_content_title">名前</p>
-                        <input class="w-100" type="text" name="" id="">
-                    </div>
+                    <form method="post" action="{{ route('send') }}">
+                        @csrf
+                        <div class="contact_content_name text-start">
+                            <label class="contact_content_title" for="name">名前</label>
+                            <input class="w-100" type="text" name="name" id="name">
+                        </div>
+                        <div class="contact_content_email text-start">
+                            <label class="contact_content_title" for="email">メールアドレス</label>
+                            <input class="w-100" type="email" name="email" id="email">
+                        </div>
 
-                    <div class="contact_content_email text-start">
-                        <p class="contact_content_title">メールアドレス</p>
-                        <input class="w-100" type="text" name="" id="">
-                    </div>
+                        <div class="contact_content_subject text-start">
+                            <label class="contact_content_title" for="subject">タイトル</label>
+                            <input class="w-100" type="text" name="subject" id="subject">
+                        </div>
 
-                    <div class="contact_content_subject text-start">
-                        <p class="contact_content_title">件名</p>
-                        <input class="w-100" type="text" name="" id="">
-                    </div>
+                        <div class="contact_content_message text-start">
+                            <label class="contact_content_title" for="contents">メッセージ</label>
+                            <textarea class="w-100" type="textarea" name="contents" id="contents" rows="4"></textarea>
+                        </div>
 
-                    <div class="contact_content_message text-start">
-                        <p class="contact_content_title">メッセージ</p>
-                        <textarea class="w-100" type="textarea" name="" id="" rows="4"></textarea>
-                    </div>
-
-                    <div class="contact_content_message_btn">
-                        <button type="submit">送信</button>
-                    </div>
-
+                        <div class="contact_content_message_btn">
+                            <button type="submit">送信</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
 
-    </div>
-
-
-    <div class="footer text-center">
-        <div class="sns_link mb-2" id="sns_logo">
-            <a href="https://www.instagram.com/con.anima_official/">
-                <i class="fa-brands fa-instagram mx-3"></i>
-            </a>
-            <a href="https://www.youtube.com/watch?v=i24t9GPkYWo&list=RDi24t9GPkYWo&start_radio=1">
-                <i class="fa-brands fa-youtube mx-3"></i> </a>
+        
+        
+        <div class="footer text-center">
+            <div class="sns_link mb-2" id="sns_logo">
+                <a href="https://www.instagram.com/con.anima_official/">
+                    <i class="fa-brands fa-instagram mx-3"></i>
+                </a>
+                <a href="https://www.youtube.com/watch?v=i24t9GPkYWo&list=RDi24t9GPkYWo&start_radio=1">
+                    <i class="fa-brands fa-youtube mx-3"></i> </a>
+                </div>
+                
+                <div class="logo_img">
+                    <a href="">
+                        <img class="header_img w-11" src="{{ asset('image/logo/logo_black.png')}}" alt="con animaロゴ">
+                    </a>
+                </div>
+            </div>
+            
         </div>
-
-        <div class="logo_img">
-            <a href="">
-                <img class="header_img w-11" src="{{ asset('image/logo/logo_black.png')}}" alt="con animaロゴ">
-            </a>
-        </div>
-    </div>
-
     </div>
 
 </body>
