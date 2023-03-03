@@ -12,7 +12,7 @@ class PagesController extends Controller
   // Homeを表示
   public function getHome()
   {
-    return view('home');
+    return view('layouts.home');
   }
 
   // メール送信処理
@@ -48,24 +48,24 @@ class PagesController extends Controller
   // Serviceを表示
   public function getFirst()
   {
-    return view('service_first');
+    return view('layouts.service_first');
   }
 
   // Serviceを表示
   public function getSemi()
   {
-    return view('service_semi');
+    return view('layouts.service_semi');
   }
 
   // Serviceを表示
   public function getFull()
   {
-    return view('service_full');
+    return view('layouts.service_full');
   }
 
   // Contactを表示
   public function getContact()
   {
-    return view('contact');
+    return view('layouts.contact');
   }
 }

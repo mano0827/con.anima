@@ -1,39 +1,6 @@
-<!DOCTYPE html>
-<html lang="ja">
+@extends('common')
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- CSSの読み込み -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-
-    <!-- fontawesomeの読み込み -->
-    <script src="https://kit.fontawesome.com/ea36bd0c33.js" crossorigin="anonymous"></script>
-
-
-
-    <title>con anime official</title>
-</head>
-
-<body>
-    <div class="site_container" id="top">
-
-        <div class="header" id="header_id">
-            <div class="header_list d-flex flex-row align-items-center justify-content-between">
-                <a href="http://localhost:8888/home">
-                    <img class="header_img" src="{{ asset('image/logo/logo_black.png')}}" alt="con animaロゴ">
-                </a>
-                <div class="site_links list-inline d-flex">
-                    <a class="site_link" href="#top">Top</a>
-                    <a class="site_link" href="#about">About</a>
-                    <a class="site_link" href="#service">Service</a>
-                    <a class="site_link" href="#contact">Contact</a>
-                </div>
-            </div>
-        </div>
+@section('content')
 
         <div class="main">
 
@@ -73,9 +40,6 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/3hYhU4v26UY?loop=1&playlist=3hYhU4v26UY&showinfo=0&theme=light&color=white" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div> -->
-
-
-
 
 
 
@@ -178,83 +142,6 @@
             </div>
 
 
-
-
-
-
-
-            <!-- <div class="service_wrapper">
-                <div class="text-center">
-                    <h2 class="service_title">Service</h2>
-                </div>
-
-
-
-                <div class="service_area d-flex justify-content-center">
-
-                    <div class="service_section">
-                        <a href="http://localhost:8888/service"></a>
-                        <div class="service_section_img">
-                            <img src="" alt="">
-                        </div>
-                        <div class="service_section_content text-center">
-                            <div class="service_section_content_title">
-                                <h3>初回体験プラン</h3>
-                            </div>
-                            <div class="service_section_content_price">
-                                <p>¥5,000</p>
-                            </div>
-                            <div class="service_section_content_detail">
-                                <p>詳細はこちらから</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="service_section">
-                        <a href="http://localhost:8888/service"></a>
-                        <div class="service_section_img">
-                            <img src="" alt="">
-                        </div>
-                        <div class="service_section_content text-center">
-                            <div class="service_section_content_title">
-                                <h3>セミオーダープラン</h3>
-                            </div>
-                            <div class="service_section_content_price">
-                                <p>¥98,000~</p>
-                            </div>
-                            <div class="service_section_content_detail">
-                                <p>詳細はこちらから</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="service_section">
-                        <a href="http://localhost:8888/service"></a>
-                        <div class="service_section_img">
-                            <img src="" alt="">
-                        </div>
-                        <div class="service_section_content text-center">
-                            <div class="service_section_content_title">
-                                <h3>フルオーダープラン</h3>
-                            </div>
-                            <div class="service_section_content_price">
-                                <p>¥198,000~</p>
-                            </div>
-                            <div class="service_section_content_detail">
-                                <p>詳細はこちらから
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-
-                </div>
- -->
-
-
-
             <div class="contact_wrapper text-center" id="contact">
                 <h2 class="contact_title">Contact</h2>
 
@@ -287,28 +174,4 @@
                 </div>
             </div>
         </div>
-
-        
-        
-        <div class="footer text-center">
-            <div class="sns_link mb-2" id="sns_logo">
-                <a href="https://www.instagram.com/con.anima_official/">
-                    <i class="fa-brands fa-instagram mx-3"></i>
-                </a>
-                <a href="https://www.youtube.com/watch?v=i24t9GPkYWo&list=RDi24t9GPkYWo&start_radio=1">
-                    <i class="fa-brands fa-youtube mx-3"></i> </a>
-                </div>
-                
-                <div class="logo_img">
-                    <a href="">
-                        <img class="footer_img" src="{{ asset('image/logo/logo_black.png')}}" alt="con animaロゴ">
-                    </a>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-
-</body>
-
-</html>
+@endsection
