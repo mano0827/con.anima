@@ -27,10 +27,10 @@
                     <img class="header_img" src="{{ asset('image/logo/logo_black.png')}}" alt="con animaロゴ">
                 </a>
                 <div class="site_links list-inline d-flex">
-                    <a class="site_link mx-3" href="#top">Top</a>
-                    <a class="site_link mx-3" href="#about">About</a>
-                    <a class="site_link mx-3" href="#service">Service</a>
-                    <a class="site_link mx-3" href="#contact">Contact</a>
+                    <a class="site_link" href="#top">Top</a>
+                    <a class="site_link" href="#about">About</a>
+                    <a class="site_link" href="#service">Service</a>
+                    <a class="site_link" href="#contact">Contact</a>
                 </div>
             </div>
         </div>
@@ -53,10 +53,11 @@
                 </div>
 
                 <div class="about_text">
-                    <p>「オリジナル楽曲」×「オリジナル映像」で、結婚や記念日などのお祝い事、または大切な人への贈り物として<br>
+                    <p>「オリジナル楽曲」×「オリジナル映像」で、<br>
+                        結婚や記念日などのお祝い事、または大切な人への贈り物として<br>
                         完全オーダーメイドのミュージックビデオを作成いたします。<br>
-                        付き合うまでのストーリーや普段の何気ない日常生活、いつもは伝えられない感謝な<br>
-                        お客さま自身の伝えたい想いを<br>
+                        付き合うまでのストーリーや何気ない日常生活、普段伝えられてない感謝の気持ち。<br>
+                        お客さま自身が伝えたい様々な想いを<br>
                         オリジナル楽曲とオリジナル映像で届けてみませんか。
                     </p>
                 </div>
@@ -80,13 +81,18 @@
 
             <div class="service_wrapper pt-5" id="service">
                 <div class="service_outer" mt-5 pt-5">
-                    <div class="service_about_title_img_r">
+                    <div class="service_about_title_img right">
                         <img src="{{ asset('image/text/first_trial_plan.png')}}" alt="First Trial, Plan">
                     </div>
 
+                    
+                    <div class="service_about right mt-3">
 
-                    <div class="service_about d-flex flex-row justify-content-end align-items-center mt-3">
-                        <div class="service_about_title-r px-2 mx-2 ms-2">
+                        <div class="service_about_img right">
+                            <img src="{{ asset('image/common/service_img1.png')}}" alt="初回体験プランの画像">
+                        </div>
+
+                        <div class="service_about_title right px-4 mx-2 ms-2">
                             <h1 class="service_outer_title">
                                 初回体験プラン
                             </h1>
@@ -99,9 +105,6 @@
                             </div>
                         </div>
 
-                        <div class="service_about_img">
-                            <img src="{{ asset('image/common/service_img1.png')}}" alt="初回体験プランの画像">
-                        </div>
 
                     </div>
 
@@ -111,18 +114,18 @@
 
 
                 <div class="service_outer my-5 pt-4">
-                    <div class="service_about_title_img_l pt-5">
+                    <div class="service_about_title_img left pt-5">
                         <img src="{{ asset('image/text/semi_order_plan.png')}}" alt="Semi Order, Plan">
                     </div>
 
 
-                    <div class="service_about d-flex flex-row justify-content-start align-items-center mt-3">
+                    <div class="service_about left mt-3">
 
-                        <div class="service_about_img">
+                        <div class="service_about_img left">
                             <img src="{{ asset('image/common/service_img2.png')}}" alt="初回体験プランの画像">
                         </div>
 
-                        <div class="service_about_title-l px-2 mx-2 ms-2">
+                        <div class="service_about_title left px-4 mx-2 ms-2">
                             <h1 class="service_outer_title">
                                 セミオーダープラン
                             </h1>
@@ -144,13 +147,18 @@
 
 
                 <div class="service_outer mt-5 pt-5">
-                    <div class="service_about_title_img_r">
+                    <div class="service_about_title_img right">
                         <img src="{{ asset('image/text/full_order_plan.png')}}" alt="First Trial, Plan">
                     </div>
 
 
-                    <div class="service_about d-flex flex-row justify-content-end align-items-center mt-3">
-                        <div class="service_about_title-r px-2 mx-2 ms-2">
+                    <div class="service_about right mt-3">
+
+                        <div class="service_about_img right">
+                            <img src="{{ asset('image/common/service_img3.png')}}" alt="初回体験プランの画像">
+                        </div>
+                        
+                        <div class="service_about_title right px-4 mx-2 ms-2">
                             <h1 class="service_outer_title">
                                 フルオーダープラン
                             </h1>
@@ -162,9 +170,6 @@
                             </div>
                         </div>
 
-                        <div class="service_about_img">
-                            <img src="{{ asset('image/common/service_img3.png')}}" alt="初回体験プランの画像">
-                        </div>
 
                     </div>
 
@@ -253,7 +258,7 @@
             <div class="contact_wrapper text-center" id="contact">
                 <h2 class="contact_title">Contact</h2>
 
-                <div class="contact_content w-50">
+                <div class="contact_content">
                     <form method="post" action="{{ route('send') }}">
                         @csrf
                         <div class="contact_content_name text-start">
@@ -296,7 +301,7 @@
                 
                 <div class="logo_img">
                     <a href="">
-                        <img class="header_img w-11" src="{{ asset('image/logo/logo_black.png')}}" alt="con animaロゴ">
+                        <img class="footer_img" src="{{ asset('image/logo/logo_black.png')}}" alt="con animaロゴ">
                     </a>
                 </div>
             </div>

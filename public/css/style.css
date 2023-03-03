@@ -32,10 +32,17 @@ p {
     font-size: medium;
     text-decoration: none;
     transition: 0.2s;
+    margin: 0px 5px;
+}
+
+@media (min-width: 768px) {
+    .site_link {
+        margin: 0px 10px;
+    }
 }
 
 
-.site_link:hover{
+.site_link:hover {
     color: #afafaf;
     text-decoration: underline;
 }
@@ -52,7 +59,8 @@ p {
 /* ■■■ Footer ■■■ */
 
 .footer {
-    margin: 100px 0 40px 0;
+    margin-top: 100px;
+    padding-bottom: 40px;
 }
 
 .fa-brands {
@@ -68,6 +76,12 @@ p {
 .sns_link a {
     text-decoration: none;
 }
+
+.footer_img{
+    width: 100px;
+}
+
+
 
 
 
@@ -115,41 +129,9 @@ p {
 .about_wrapper {
     margin-top: 120px;
     line-height: 25px;
+    padding: 0 30px;
 }
 
-
-
-
-/* ■■■ Service ■■■ */
-/* 
-.service_section {
-    width: 300px;
-    position: relative;
-}
-
-.service_section a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-
-.service_wrapper {
-    margin-top: 150px;
-}
-
-.service_title {
-    font-size: 45px;
-}
-
-.service_section_content {
-    padding: 8%;
-}
-
-.service_section:hover {
-    background-color: #ece9e3;
-} */
 
 
 
@@ -185,6 +167,30 @@ p {
 /* ■■■ Service ■■■ */
 /* ■■■■■■■■■■■■■■■■■■■■ */
 
+/* サービスの枠 */
+
+@media (min-width: 768px) {
+    .service_about.right {
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .service_about.left {
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+@media (min-width: 1366px) {
+    .service_about {
+        align-items: center;
+    }
+}
+
+
 
 /* プランの画像 */
 
@@ -193,58 +199,146 @@ p {
     min-width: 350px;
 }
 
+@media (min-width: 600px) {
+    .service_about_img {
+        min-width: 500px;
+    }
+}
+
+@media (min-width: 768px) {
+    .service_about_img {
+        min-width: 450px;
+    }
+}
+
+
 
 .service_about_img img {
     width: 100%;
 }
 
 
+@media (max-width: 767px) {
+    .service_about_img.right {
+        margin: auto;
+        margin-right: 0px;
+    }
+}
+
+
+
+
 
 /* 右揃えプランの英語タイトルの調整 */
 
-.service_about_title_img_r {
+.service_about_title_img.right {
     display: flex;
     justify-content: end;
 }
 
-.service_about_title_img_r img {
-    width: 800px;
-    height: 60px;
+.service_about_title_img.right img {
     object-fit: cover;
-    object-position: -80% 0%;
+    width: 350px;
+    height: 50px;
+    object-position: 0% 0%;
 }
+
+
+
+@media (min-width: 768px) {
+    .service_about_title_img.right img {
+        width: 767px;
+        height: 50px;
+        object-position: -220% 0%;
+    }
+}
+
+
+@media (min-width: 1366px) {
+    .service_about_title_img.right img {
+        width: 800px;
+        height: 60px;
+        object-position: -80% 0%;
+    }
+}
+
+
+
+
+
+
+
 
 
 
 
 /* 左揃えプランの英語タイトルの調整 */
 
-.service_about_title_img_l {
+.service_about_title_img.left {
     display: flex;
     justify-content: start;
 }
 
-.service_about_title_img_l img {
-    width: 800px;
-    height: 60px;
+
+.service_about_title_img.left img {
     object-fit: cover;
-    object-position: 160% 0%;
+    width: 350px;
+    height: 48px;
+    object-position: 100% 0%;
 }
 
 
-.service_about_title-r {}
-
-.service_about_title-l {
-    width: 40%;
+@media (min-width: 768px) {
+    .service_about_title_img.left img {
+        width: 767px;
+        height: 50px;
+        object-position: 300% 0%;
+    }
 }
 
+@media (min-width: 1366px) {
+    .service_about_title_img.left img {
+        width: 800px;
+        height: 60px;
+        object-position: 180% 0%;
+    }
+}
+
+
+
+/* 左揃えプランのテキストの調整 */
+
+.service_about_title {
+    padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .service_about_title.right {
+        width: 45%;
+        padding-top: 0px;
+    }
+}
+
+@media (min-width: 768px) {
+    .service_about_title.left {
+        width: 45%;
+        padding-top: 0px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .service_about_title.right {
+        width: auto;
+        padding-top: 0px;
+    }
+}
 
 
 /* 簡易説明文章 */
 
 .service_about_text {
     margin-bottom: 5px;
-    padding-left: 8px;
+    padding: 0 8px;
 }
 
 
@@ -287,6 +381,20 @@ p {
 /* ■■■■■■■■■■■■■■■■■■■■ */
 /* ■■■ Contact ■■■ */
 /* ■■■■■■■■■■■■■■■■■■■■ */
+
+.contact_content {
+    width: 65%;
+}
+
+
+@media (min-width: 1366px) {
+    .contact_content {
+        width: 50%;
+    }
+}
+
+
+
 
 .contact_content_message_btn {
     margin-top: 10px;
@@ -361,20 +469,40 @@ p {
 }
 
 
+/* サービス画面のスライドテキスト */
 
 .service_slide_text {
     position: absolute;
-    left: 25%;
+    text-align: center;
+    left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
+@media (min-width: 768px) {
+.service_slide_text {
+    text-align: start;
+    left: 25%;
+    top: 50%;
+}
+}
+
+
+
+
 .service_slide_text h1 {
-    font-size: 750%;
+    font-size: 650%;
     font-family: 'Vollkorn', serif;
     letter-spacing: 8px;
     line-height: 95%;
 }
+
+@media (min-width: 768px) {
+    .service_slide_text h1 {
+        font-size: 750%;
+    }
+}
+
 
 
 
@@ -402,8 +530,14 @@ p {
 
 .service_detail {
     margin: 0 auto;
+    width: 70%;
 }
 
+@media (min-width: 1366px) {
+    .service_detail {
+        width: 50%;
+    }
+}
 
 
 
@@ -413,6 +547,13 @@ p {
 
 .service_price {
     margin: 0 auto;
+    width: 70%;
+}
+
+@media (min-width: 1366px) {
+    .service_price {
+        width: 50%;
+    }
 }
 
 
@@ -428,7 +569,7 @@ p {
 }
 
 
-.service_bottom_link:hover{
+.service_bottom_link:hover {
     color: #afafaf;
     text-decoration: underline;
 }
