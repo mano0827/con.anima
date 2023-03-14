@@ -13,6 +13,7 @@
     <!-- fontawesomeの読み込み -->
     <script src="https://kit.fontawesome.com/ea36bd0c33.js" crossorigin="anonymous"></script>
 
+    <link rel="shortcut icon" type="image/x-icon"  href="{{ asset('image/favicon.ico') }}">
 
     <title>con anime official</title>
 </head>
